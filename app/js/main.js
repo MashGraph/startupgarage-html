@@ -1,11 +1,7 @@
+'use strict';
 $(document).ready(function() {
 
-  /**
-   * This object controls the nav bar. Implement the add and remove
-   * action over the elements of the nav bar that we want to change.
-   *
-   * @type {{flagAdd: boolean, elements: string[], add: Function, remove: Function}}
-   */
+
   var myNavBar = {
 
     flagAdd: true,
@@ -19,7 +15,7 @@ $(document).ready(function() {
     add: function() {
       if (this.flagAdd) {
         for (var i = 0; i < this.elements.length; i++) {
-          document.getElementById(this.elements[i]).className += " fixed-theme";
+          document.getElementById(this.elements[i]).className += ' fixed-theme';
         }
         this.flagAdd = false;
       }
@@ -40,9 +36,9 @@ $(document).ready(function() {
    * that we want to change when the scroll goes down
    */
   myNavBar.init([
-    "header",
-    "header-container",
-    "brand"
+    'header',
+    'header-container',
+    'brand'
   ]);
 
   /**
@@ -56,7 +52,7 @@ $(document).ready(function() {
 
     if (yOffset < currYOffSet) {
       myNavBar.add();
-    } else if (currYOffSet == yOffset) {
+    } else if (currYOffSet === yOffset) {
       myNavBar.remove();
     }
 
@@ -66,8 +62,8 @@ $(document).ready(function() {
    * bind to the document scroll detection
    */
   window.onscroll = function(e) {
-    offSetManager();
-  }
+    offSetManager(e);
+  };
 
   /**
    * We have to do a first detectation of offset because the page

@@ -1,10 +1,37 @@
 html,
 body {
   overflow-x: hidden;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
 
   /* Prevent scroll on narrow devices */
 }
 
 body {
   padding-top: 120px;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: 12px !important;
+  padding: 5px 15px !important;
+  margin-top: 10px;
+  color: #fff !important;
+  border: none;
+
+  &.orange {
+    background-color: $site-orange-color;
+  }
+
+  &.black {
+    background-color: $site-black-color;
+  }
+}
+
+.section-container {
+  height: 100vh;
+  background-position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

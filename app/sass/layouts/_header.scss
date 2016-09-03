@@ -12,6 +12,28 @@
 }
 
 .navbar-fixed-top {
+  li {
+    &.active {
+      border-bottom: $site-orange-color 2px solid;
+    }
+
+    a {
+      color: #000;
+    }
+  }
+
+  .navbar-right {
+    margin-left: 10px;
+
+    li {
+      margin-right: 15px;
+
+      a {
+        font-size: 18px;
+      }
+    }
+  }
+
   &.fixed-theme {
     background-color: #fff;
     border-top: #c8c8c8 thin solid;
@@ -22,6 +44,14 @@
 
       .nav {
         margin-left: 60px;
+
+        &.navbar-right {
+          margin-left: 10px;
+
+          li {
+            margin-right: 15px;
+          }
+        }
 
         li {
           margin-right: 50px;
