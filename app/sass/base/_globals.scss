@@ -8,7 +8,15 @@ body {
 }
 
 body {
-  padding-top: 120px;
+  padding-top: 80px;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+.unpadded {
+  padding: 0 !important;
 }
 
 .btn {
@@ -18,6 +26,7 @@ body {
   margin-top: 10px;
   color: #fff !important;
   border: none;
+  font-weight: 600;
 
   &.orange {
     background-color: $site-orange-color;
@@ -26,11 +35,22 @@ body {
   &.black {
     background-color: $site-black-color;
   }
+
+  &.btn-xl {
+    padding: 20px 100px !important;
+    font-size: 14px !important;
+
+    i {
+      font-size: 25px;
+      position: absolute;
+      left: 70px;
+    }
+  }
 }
 
 .section-container {
   height: 100vh;
-  background-position: fixed;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;

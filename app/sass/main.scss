@@ -1,5 +1,7 @@
 $icon-font-path: '../fonts/';
 
+@import 'base/reset';
+
 /*----- VENDORS-------
 ----------------------*/
 
@@ -21,6 +23,7 @@ $icon-font-path: '../fonts/';
 -----------------------*/
 @import 'base/mixins';
 @import 'base/placeholders';
+@import 'base/elements';
 
 /*-----SPRITES-------
 -----------------------*/
@@ -41,3 +44,4 @@ $icon-font-path: '../fonts/';
 /*-----PAGES-------
 -----------------------*/
 @import 'pages/home';
+@import 'base/timeline';

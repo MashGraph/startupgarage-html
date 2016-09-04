@@ -201,7 +201,6 @@ gulp.task('serve', ['styles', 'fonts'], () => {
     });
     gulp.watch('app/tpl/**/*.html', ['fileinclude']);
     gulp.watch('app/sass/**/*.scss', ['styles']);
-    gulp.watch('app/js/**/*.js', ['lint']);
     gulp.watch('app/fonts/**/*', ['fonts']);
     gulp.watch('app/img/**/*', ['sprites']);
     gulp.watch('bower.json', ['wiredep', 'fonts']);
