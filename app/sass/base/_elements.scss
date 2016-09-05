@@ -1,5 +1,16 @@
 .rocket-home {
-  position: absolute;
   right: 100px;
   top: 30px;
+}
+
+.building {
+  max-width: 555px;
+
+  @include centerer(false, true);
+
+  left: 30%;
+}
+
+.elements {
+  position: absolute;
 }

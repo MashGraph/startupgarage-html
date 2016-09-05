@@ -73,3 +73,15 @@ $(document).ready(function() {
 });
 
 
+$(function(){
+  setTimeout(function() {
+    var s = skrollr.init({
+      forceHeight: false
+    });
+    skrollr.menu.init(s, {
+      change: function(hash, top) {
+        console.log(hash, top);
+      }
+    });
+  }, 500);
+})

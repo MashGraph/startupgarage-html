@@ -1,8 +1,6 @@
 .home {
-  height: 100vh;
   background-image: url('../img/home-bg.png');
-  background-repeat: no-repeat;
-  background-position: 790px center;
+  background-position: 700px center;
 }
 
 .section-title {
@@ -10,4 +8,25 @@
   margin: 0 auto;
 }
 
-.how {}
+.how {
+  .events-content {
+    h2 {
+      font-size: 25px;
+    }
+
+    p {
+      margin-bottom: 10px !important;
+    }
+
+    .slide-image {
+      position: absolute;
+      width: 140px;
+      left: 10px;
+      top: 20px;
+    }
+  }
+}
+
+.benefits {
+  background-image: url('../img/bg-benefits.jpg');
+}
