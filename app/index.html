@@ -11,6 +11,7 @@
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css css/main.css -->
@@ -35,7 +36,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a id="brand" class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" /></a>
+          <a id="brand" class="navbar-brand" href="#"><img src="img/logo.png" srcset="img/logo@2x.png 2x" alt="logo" /></a>
         </div>
         <div id="navbar" class="nav-collapse collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -46,12 +47,11 @@
             <li><a href="#contact">Contact Us</a></li>
           </ul>
           <ul class="nav sign-buttons navbar-nav navbar-right ">
-            <li><a class="btn btn-default orange" href="#">Sign In <i class="fa fa-chevron-down"></i></a></li>
-            <li><a class="btn btn-default black" href="#">Sign Up <i class="fa fa-chevron-down"></i></a></li>
+            <li><button class="btn btn-default orange">Sign In <i class="fa fa-chevron-down"></i></button></li>
+            <li><button class="btn btn-default black">Sign Up <i class="fa fa-chevron-down"></i></button></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
           </ul>
         </div>
@@ -66,7 +66,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <img class="img-responsive" src="img/wework.png" alt="we work" />
+        <img class="img-responsive" srcset="img/wework@2x.png 2x" src="img/wework.png" alt="we work" />
         <div class="text-content">
           <h2>
             Pre-Accelator for Non-Technical Founders
@@ -92,7 +92,7 @@
       </div>
       <div class="col-md-6">
         <div class="row rocket-pane">
-          <img src="img/rocket.png" alt="rocket" class="elements rocket-home" />
+          <img data-0="top:0px;" data-150="top: -320px;" srcset="img/rocket@2x.png 2x" src="img/rocket.png" alt="rocket" class="elements rocket-home" />
         </div>
       </div>
     </div>
@@ -218,13 +218,195 @@
   </div>
 </section>
 <section id="benefits" class="benefits section-container">
-  <div class="col-md-6">
-    <img class="img-responsive building elements" src="img/building.png" alt="building"/>
-  </div>
-  <div class="col-md-6">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sapiente eveniet eum porro rerum quas, veritatis eaque atque in suscipit quisquam ab doloribus dolores obcaecati itaque voluptatibus eligendi, totam distinctio.
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 image-content">
+        <img data-0="top:-11510px;" data-1300="top: 220px;" srcset="img/building@2x.png 2x" class="img-responsive building elements" src="img/building.png" alt="building" />
+        <img data-0="left:-1500px" data-1300="left: 200px;" class="img-responsive cloud-big-1 elements" srcset="img/cloud-big@2x.png 2x" src="img/cloud-big.png" alt="cloud">
+        <img data-0="right:-1500px" data-1300="right: -80px;" class="img-responsive cloud-big-2 elements" srcset="img/cloud-big@2x.png 2x" src="img/cloud-big.png" alt="cloud">
+        <img data-1300="left:-1500px" data-1410="left:100px;" class="img-responsive cloud-small-1 elements" srcset="img/cloud-small@2x.png 2x" src="img/cloud-small.png" alt="cloud">
+        <img data-1300="right:-1500px" data-1410="right: -10px;" class="img-responsive cloud-small-2 elements" srcset="img/cloud-small@2x.png 2x" src="img/cloud-small.png" alt="cloud">
+      </div>
+      <div class="col-md-6 benefit-list">
+        <div class="text-center list-content">
+          <h1>
+              In 3 months, you receive:
+          </h1>
+          <div class="list">
+            <ul>
+              <li>
+                <div class="list-thumbnail icon-prototype">
+                </div>
+                <div class="list-text">
+                  <span class="header">
+                      Fast Prototype
+                    </span>
+                  <p>
+                    A fast prototype that allows you to test the market and engage investors and accelerators
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="list-thumbnail icon-iteration">
+                </div>
+                <div class="list-text">
+                  <span class="header">
+                      Unlimited Iteration
+                  </span>
+                  <p>
+                    3-month technical team for unlimited iteration on your prototype
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="list-thumbnail icon-workspace">
+                </div>
+                <div class="list-text">
+                  <span class="header">
+                      Free Workspace
+                  </span>
+                  <p>
+                    3-month WeWork work space
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="list-thumbnail icon-investor">
+                </div>
+                <div class="list-text">
+                  <span class="header">
+                      Guaranteed Investor Meetings
+                  </span>
+                  <p>
+                    Together with a network of early-stage VCs and angels that will allow you to sustain your startup past the Startup Garage programme
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="list-thumbnail icon-expert">
+                </div>
+                <div class="list-text">
+                  <span class="header">
+                      Expert Guidance
+                  </span>
+                  <p>
+                    A curated industry expert network that provides guidance and help tackle difficult decisions
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="list-thumbnail icon-connect">
+                </div>
+                <div class="list-text">
+                  <span class="header">
+                      Conect To WeWork Community
+                  </span>
+                  <p>
+                    Access to a private digital platform that directly connects you with 50,000+ members of the global WeWork community, in which you can:
+                  </p>
+                  <ul>
+                    <li>
+                      Promote your services and find new clients,
+                    </li>
+                    <li>
+                      Search for business and service listings that can help your startup grow,
+                    </li>
+                    <li>
+                      Network with like-minded entrepreneurs,
+                    </li>
+                    <li>
+                      Expose your startup to a sizable global audience from day one.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="list-thumbnail icon-support">
+                </div>
+                <div class="list-text">
+                  <span class="header">
+                      Launch Support
+                  </span>
+                  <p>
+                    A community team that provides launch support such as: build initial user community, organize launch events, and connect with media
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+<section id="inquiry" class="inquiry section-container">
+  <div class="container">
+    <div class="row">
+      <div class="clearfix inquiry-container col-md-7">
+        <div class="rocket-image">
+            <img data-1200="transform:rotate(0deg);" data-1900="transform:rotate(360deg);" class="img-responsive" srcset="img/rocket-inquiry@2x.png 2x" src="img/rocket-inquiry.png" alt="rocket"/>
+        </div>
+        <div class="weknowstartup">
+          <h1>
+              We Know Startup!
+            </h1>
+            <p>
+              Startup’s product-to-market approach emphasizes on quick development of a “minimum viable product,” designed with the smallest set of features that will appeal to a small group of target audience. You will then continue to experiment by tweaking your offerings, see how the market responds, and change your offerings accordingly. The goal is to accelerate the pace of designing a product and developing a market.
+            </p>
+            <a href="#" class="btn btn-xl black"><i class="pe-7s-user-female"></i> Send us an inquiry</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="clearfix logo-socials">
+        <div class="col-md-6">
+          <img srcset="img/logo@2x.png 2x" src="img/logo.png" alt="footer logo" />
+        </div>
+        <div class="col-md-6">
+          <div class="col-md-4 social-item">
+            <div class="details">
+              <div class="icon">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              </div>
+              <span>@STARTUPGARAGE.io</span>
+              <a href="#">facebook.com/StartupGarage.io</a>
+            </div>
+          </div>
+          <div class="col-md-4 social-item">
+            <div class="details">
+              <div class="icon">
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+              </div>
+              <span>@_StartupGarage</span>
+              <a href="#">twitter.com/_StartupGarage</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-4 copyright-text">
+            © 2014 Startup Garage. All Rights Reserved.
+          </div>
+          <div class="col-md-8">
+            <ul class="nav nav-justified">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Downloads</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
 </script>
@@ -255,12 +437,13 @@
 <script src="js/timeline.js"></script>
 <!-- build:js js/main.js -->
 <script src="js/main.js"></script>
-
-
-
 <!-- endbuild -->
+<script>
+$(function() {
+  var s = skrollr.init();
 
-
+})
+</script>
 </body>
 
 </html>

@@ -9,21 +9,45 @@ Icon classes can be used entirely standalone. They are named after their origina
 <img class="icon-home" />
 ```
 */
-.icon-camera {
+.icon-connect {
   background-image: url(../img/sprites.png);
   background-position: 0px 0px;
-  width: 48px;
-  height: 48px;
+  width: 57px;
+  height: 57px;
 }
-.icon-landscape {
+.icon-expert {
   background-image: url(../img/sprites.png);
-  background-position: 0px -48px;
-  width: 24px;
-  height: 24px;
+  background-position: -57px 0px;
+  width: 57px;
+  height: 57px;
 }
-.icon-picture {
+.icon-investor {
   background-image: url(../img/sprites.png);
-  background-position: -48px 0px;
-  width: 32px;
-  height: 32px;
+  background-position: 0px -57px;
+  width: 57px;
+  height: 57px;
+}
+.icon-iteration {
+  background-image: url(../img/sprites.png);
+  background-position: -57px -57px;
+  width: 57px;
+  height: 57px;
+}
+.icon-prototype {
+  background-image: url(../img/sprites.png);
+  background-position: -114px 0px;
+  width: 57px;
+  height: 57px;
+}
+.icon-support {
+  background-image: url(../img/sprites.png);
+  background-position: -114px -57px;
+  width: 57px;
+  height: 57px;
+}
+.icon-workspace {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -114px;
+  width: 57px;
+  height: 57px;
 }

@@ -8,8 +8,8 @@
     "owl.carousel": "^2.1.6",
     "jquery": "^2.1.4",
     "skrollr": "^0.6.30",
-    "skrollr-menu": "^1.0.3"
-
+    "skrollr-menu": "^1.0.3",
+    "animate.css": "^3.5.2"
   },
   "overrides": {
     "bootstrap-sass": {

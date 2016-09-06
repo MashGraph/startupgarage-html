@@ -29,4 +29,67 @@
 
 .benefits {
   background-image: url('../img/bg-benefits.jpg');
+
+  .image-content {
+    width: 50%;
+    position: relative;
+    margin-top: 170px;
+  }
+
+  .list-content {
+    padding-left: 100px;
+
+    h1 {
+      font-weight: 600;
+      font-size: 38px;
+    }
+  }
+
+  .list {
+    text-align: left;
+
+    ul {
+      li {
+        padding: 10px 0;
+        position: relative;
+
+        ul {
+          li {
+            padding: 0;
+            list-style-type: square;
+          }
+        }
+      }
+    }
+  }
+
+  .list-thumbnail {
+    width: 57px;
+    position: absolute;
+    height: 57px;
+  }
+
+  .list-text {
+    padding-left: 80px;
+    font-size: 12px;
+    color: #555555;
+
+    .header {
+      font-weight: 600;
+      color: $site-blue;
+    }
+  }
+}
+
+.inquiry-container {
+  float: none;
+  margin: 0 auto;
+
+  .rocket-image {
+    @include centerer(false, true);
+  }
+
+  .weknowstartup {
+    padding-left: 170px;
+  }
 }
