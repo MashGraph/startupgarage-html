@@ -1,0 +1,49 @@
+$icon-font-path: '../fonts/';
+
+@import 'base/reset';
+
+/*----- VENDORS-------
+----------------------*/
+
+// bower:scss
+@import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import 'bower_components/font-awesome/scss/font-awesome.scss';
+
+// endbower
+
+/*----- FONTS-------
+----------------------*/
+@import 'base/fonts';
+
+/*-----VARIABLES----
+-----------------------*/
+@import 'base/variables';
+
+/*-----MIX-INS AND PLACEHOLDER -------
+-----------------------*/
+@import 'base/mixins';
+@import 'base/placeholders';
+@import 'base/elements';
+
+/*-----SPRITES-------
+-----------------------*/
+@import 'base/sprites';
+
+/*-----LAYOUTS-------
+-----------------------*/
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/body';
+
+/*-----GLOBALS--------
+--------------------------*/
+@import 'base/globals';
+
+/*-----PAGES-------
+-----------------------*/
+@import 'pages/home';
+@import 'pages/faq';
+
+/*-----MODULES-------
+-----------------------*/
+@import 'base/timeline';
