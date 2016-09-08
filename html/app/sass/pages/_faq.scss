@@ -1,0 +1,82 @@
+.faq-section {
+  .faq-banner {
+    background-image: url(../img/header-faq.png);
+    min-height: 220px;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 767px) {
+      min-height: 100px;
+    }
+
+    @media screen and (max-width: 768px) {
+      background-position: 500px center;
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      background-position: 600px center;
+    }
+  }
+
+  .faq {
+    & > li {
+      padding: 20px;
+      border: #ededed thin solid;
+      border-left: $site-orange-color 3px solid;
+    }
+
+    .q {
+      font-size: 18px;
+      font-weight: 800;
+      cursor: pointer;
+      position: relative;
+
+      i {
+        position: absolute;
+        right: 10px;
+      }
+    }
+
+    .a {
+      font-size: 16px;
+      display: none;
+
+      ul {
+        padding-left: 35px;
+        list-style-type: square;
+      }
+
+      li {
+        border: none;
+      }
+    }
+  }
+}
+
+.weknow-content {
+  background-color: #fff;
+  padding: 15px;
+  border: #ededed thin solid;
+  border-bottom: $site-orange-color 3px solid;
+
+  .btn-container {
+    .btn {
+      padding: 15px 25px !important;
+      font-size: 14px !important;
+
+      i {
+        left: 30px;
+        font-size: 18px;
+
+        @include centerer(false, true);
+      }
+    }
+  }
+}
+
+.rotate {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}

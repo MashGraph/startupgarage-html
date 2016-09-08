@@ -1,0 +1,68 @@
+.rocket-home {
+  right: 100px;
+  top: 30px;
+
+  @media screen and (max-width: 768px) {
+    right: 0;
+    position: relative !important;
+  }
+}
+
+.building {
+  max-width: 555px;
+
+  @include centerer(false, true);
+
+  top: 220px;
+  left: 100px;
+}
+
+.elements {
+  position: absolute;
+}
+
+.cloud-big-1 {
+  left: 200px;
+  top: -20px;
+}
+
+.cloud-big-2 {
+  right: -80px;
+  top: 80px;
+
+  @media screen and (max-width: 767) {
+    right: -300px;
+  }
+}
+
+.cloud-small-1 {
+  top: 100px;
+  left: 100px;
+}
+
+.cloud-small-2 {
+  top: -50px;
+  right: 0;
+}
+
+.modal {
+  .modal-header,
+  .modal-footer {
+    border: none;
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+
+  .modal-content {
+    border-radius: 0;
+    width: 700px;
+    border-bottom: 5px $site-orange-color solid;
+  }
+
+  .contact-details {
+    border-left: #f5f5f5 thin solid;
+    background-color: #f7f7f7;
+  }
+}
