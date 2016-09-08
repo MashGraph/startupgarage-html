@@ -36,14 +36,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a id="brand" class="navbar-brand" href="#">
+          <a id="brand" class="navbar-brand" href="index.html">
             <img class="img-responsive logo-web" src="img/logo.png" srcset="img/logo@2x.png 2x" alt="logo" />
             <img class="img-responsive logo-mobile" src="img/logo-mobile.png" alt="logo" />
           </a>
         </div>
         <ul class="nav visible-xs sign-xs-buttons navbar-nav">
           <li>
-            <button data-toggle="modal" data-target="#contact-us-modal" class="btn btn-default black">I'm Interested <i class="fa fa-chevron-down"></i></button>
+            <button onclick="window.location.href='/interested.html'"  class="btn btn-default black">I'm Interested <i class="fa fa-chevron-down"></i></button>
           </li>
           <li>
             <button class="btn btn-default orange">Sign In <i class="fa fa-chevron-down"></i></button>
@@ -59,10 +59,10 @@
           </ul>
           <ul class="nav hidden-xs sign-buttons navbar-nav navbar-right ">
             <li>
-              <button data-toggle="modal" data-target="#contact-us-modal" class="btn btn-default black">I'm Interested <i class="fa fa-chevron-down"></i></button>
+              <button onclick="window.location.href='/interested.html'"  class="btn btn-default black">I'm Interested <i class="fa fa-chevron-down"></i></button>
             </li>
             <li>
-              <button class="btn btn-default orange">Sign In <i class="fa fa-chevron-down"></i></button>
+              <button data-toggle="modal" data-target="#general" class="btn btn-default orange">Sign In <i class="fa fa-chevron-down"></i></button>
             </li>
           </ul>
           <ul class="nav hidden-xs navbar-nav navbar-right">
@@ -369,7 +369,7 @@
             <p>
               Startup’s product-to-market approach emphasizes on quick development of a “minimum viable product,” designed with the smallest set of features that will appeal to a small group of target audience. You will then continue to experiment by tweaking your offerings, see how the market responds, and change your offerings accordingly. The goal is to accelerate the pace of designing a product and developing a market.
             </p><br/>
-            <a href="#" class="btn btn-xl black"><i class="pe-7s-user-female"></i> Send us an inquiry</a>
+            <a href="#" data-toggle="modal" data-target="#contact-us-modal" class="btn btn-xl black"><i class="pe-7s-user-female"></i> Send us an inquiry</a>
         </div>
       </div>
     </div>
@@ -380,8 +380,8 @@
     <div class="row">
       <div class="clearfix logo-socials">
         <div class="col-md-6 col-sm-6 col-xs-4">
-          <img srcset="img/logo@2x.png 2x" class="hidden-xs img-responsive" src="img/logo.png" alt="footer logo" />
-          <img class="visible-xs img-responsive" src="img/logo-footer-mobile.png" alt="footer logo" />
+          <a href="index.html"><img srcset="img/logo@2x.png 2x" class="hidden-xs img-responsive" src="img/logo.png" alt="footer logo" /></a>
+          <a href="index.html"><img class="visible-xs img-responsive" src="img/logo-footer-mobile.png" alt="footer logo" /></a>
         </div>
         <div class="col-md-6 col-xs-8 col-sm-6">
           <div class="col-md-5 social-item">
@@ -428,24 +428,107 @@
 <div class="modal fade" id="contact-us-modal" tabindex="-1" role="dialog" aria-labelledby="contact-us-modal">
   <div class="modal-dialog" role="document">
     <div class="modal-content ">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
       <div class="modal-body clearfix">
-        <div class="col-md-6 contact-form">
+        <div class="col-md-7 contact-form">
           <div class="title-header">
             <h3>
               GET IN TOUCH WITH US
             </h3>
             <span>Send us your inquiries. We wil get to you as son as we can.</span>
           </div>
+          <br/>
+          <div class="contact-form-inputs">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Full Name">
+              </div>
+              <br/>
+              <div class="form-group">
+                <textarea placeholder="Write your message here..."></textarea>
+              </div>
+              <button class="btn orange btn-xl btn-block">Submit</button>
+            </form>
+          </div>
         </div>
-        <div class="col-md-6 contact-details">
+        <div class="col-md-5 contact-details">
           <div class="title-header">
             <h3>
             CONTACT INFO
           </h3>
             <span>You can also directly contact us with this info.</span>
           </div>
+          <br/>
+          <div class="contacts">
+            <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <td>Email Address :</td>
+                  <td><b>info@startupgarage.hk</b></td>
+                </tr>
+                <tr>
+                  <td>Phone: </td>
+                  <td><b>000.000.0000</b></td>
+                </tr>
+                <tr>
+                  <td>Office Address:</td>
+                  <td> <b>123 Business District
+                          Kowloon, Honk Kong
+                        </b>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><br/>
+          <div class="social-networks">
+            <ul>
+              <li>
+                <div class="social-item">
+                  <div class="details">
+                    <div class="icon">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </div>
+                    <div class="url">
+                      <span><b>@STARTUPGARAGE.io</b></span>
+              <a href="#">facebook.com/StartupGarage.io</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="social-item">
+                  <div class="details">
+                    <div class="icon">
+                      <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </div>
+                    <div class="url">
+                      <span><b>@_StartupGarage</b></span>
+                    <a href="#">twitter.com/_StartupGarage</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="general" tabindex="-1" role="dialog" aria-labelledby="general">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content general">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+
+        <div class="message">
+           <h4>
+              This section is not yet available
+           </h4>
+        </div>
     </div>
   </div>
 </div>
