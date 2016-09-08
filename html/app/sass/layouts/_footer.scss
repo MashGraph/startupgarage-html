@@ -2,6 +2,7 @@ footer {
   min-height: 150px;
   background-color: #f9f9f9;
   display: flex;
+  margin-top: 30px;
   align-items: center;
   justify-content: center;
   -webkit-box-shadow: inset -1px 2px 20px 0px rgba(231, 231, 231, 0.73);
@@ -16,7 +17,7 @@ footer {
     }
 
     @media screen and (max-width: 767px) {
-      padding: 10px 40px;
+      padding: 10px 25px;
     }
   }
 
@@ -65,5 +66,12 @@ footer {
         text-decoration: underline;
       }
     }
+  }
+}
+
+.logo-footer-container {
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    position: relative;
+    top: 20px;
   }
 }
