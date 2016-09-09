@@ -9,6 +9,14 @@
   @media screen and (max-width: 767px) {
     background: none;
   }
+
+  .text-content {
+    p {
+      @media screen and (max-width: 767) {
+        text-align: justify;
+      }
+    }
+  }
 }
 
 .section-title {
