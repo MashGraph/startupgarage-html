@@ -17,7 +17,8 @@ footer {
     }
 
     @media screen and (max-width: 767px) {
-      padding: 10px 25px;
+      padding: 10px;
+      word-wrap: break-word;
     }
   }
 
@@ -38,7 +39,7 @@ footer {
     .icon {
       @include centerer(false, true);
 
-      left: -20px;
+      left: -25px;
 
       i {
         font-size: 35px;
@@ -73,5 +74,10 @@ footer {
   @media screen and (min-width: 768px) and (max-width: 992px) {
     position: relative;
     top: 20px;
+  }
+
+  @media screen and (max-width: 767px) {
+    position: relative;
+    top: 25px;
   }
 }
