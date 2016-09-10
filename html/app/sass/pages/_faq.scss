@@ -21,6 +21,12 @@
   }
 
   .faq {
+    p {
+      @media screen and (max-width: 767px) {
+        text-align: justify;
+      }
+    }
+
     li {
       word-wrap: break-word;
     }
