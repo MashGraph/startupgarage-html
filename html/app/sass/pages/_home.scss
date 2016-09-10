@@ -7,7 +7,11 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 992px) {
-    background-position: 370px center;
+    background-position: 250px center;
+
+    .button-action {
+      text-align: center;
+    }
   }
 
   @media screen and (max-width: 767px) {
@@ -16,11 +20,19 @@
     .home-title {
       text-align: center;
     }
+
+    .mobile-pane {
+      background-image: url('../img/responsive-rocket.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      padding-top: 30px;
+    }
   }
 
   .text-content {
     p {
-      @media screen and (max-width: 767) {
+      @media screen and (max-width: 767px) {
         text-align: justify;
       }
     }
@@ -46,6 +58,19 @@
   .events-content {
     h2 {
       font-size: 25px;
+      margin-bottom: 10px !important;
+    }
+
+    ol {
+      li {
+        height: 300px;
+
+        @media screen and (max-width: 767px) {
+          height: 450px;
+          overflow: hidden;
+          overflow-y: scroll;
+        }
+      }
     }
 
     p {
@@ -77,6 +102,10 @@
     background: none;
   }
 
+  @media screen and (max-width: 1024px) and (max-width: 1169px) {
+    background-position: -300px;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 992px) {
     background-position: center top;
   }
@@ -90,16 +119,14 @@
       display: none;
     }
 
-    .building {
-      @media screen and (min-width: 768px) and (max-width: 1199px) {
-        position: relative;
-      }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 100%;
     }
+  }
 
-    .cloud-big-1 {
-      @media screen and (min-width: 768px) {
-        left: 550px;
-      }
+  .benefit-list {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 100%;
     }
   }
 
@@ -181,6 +208,10 @@
 
     @media screen and (max-width: 767px) {
       padding: 5px;
+
+      p {
+        text-align: justify;
+      }
     }
   }
 }

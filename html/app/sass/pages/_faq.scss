@@ -53,9 +53,7 @@
       font-size: 16px;
       display: none;
 
-      @media screen and (max-width: 767px) {
-        text-align: justify;
-      }
+      @media screen and (max-width: 767px) {}
 
       ul {
         padding-left: 35px;

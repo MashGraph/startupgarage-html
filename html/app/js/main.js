@@ -9,7 +9,6 @@ $(document).ready(function() {
 
   }
 
-
   var myNavBar = {
 
     flagAdd: true,

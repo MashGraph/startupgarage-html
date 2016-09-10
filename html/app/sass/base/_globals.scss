@@ -1,11 +1,14 @@
 html,
 body {
-  overflow-x: hidden;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
   background-color: #f9f9f9;
 
   /* Prevent scroll on narrow devices */
+}
+
+.skrollr-body {
+  height: 100%;
 }
 
 .container {
@@ -15,6 +18,10 @@ body {
 
 body {
   padding-top: 80px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 0;
+  }
 }
 
 h1, h2, h3 {
@@ -79,25 +86,34 @@ h3 {
   }
 
   &.btn-xl {
+    padding: 15px !important;
+    font-size: 14px !important;
+    width: 360px;
+
     @media screen and (max-width: 767px) {
       display: block;
       width: 100%;
     }
 
-    padding: 20px 60px !important;
-    font-size: 14px !important;
-
     i {
       font-size: 25px;
       position: absolute;
-      left: 25px;
+      left: 90px;
+
+      @media screen and (max-width: 480px) {
+        left: 30px;
+      }
+
+      @media screen and (min-width: 690px) and (max-width: 767px) {
+        left: 190px;
+      }
     }
   }
 }
 
 .section-container {
   min-height: 100vh;
-  background-attachment: fixed;
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -113,6 +129,7 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   clear: both;
+  background-attachment: fixed;
 }
 
 [class*='col-'] {

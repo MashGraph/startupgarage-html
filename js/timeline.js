@@ -2,7 +2,7 @@
 jQuery(document).ready(function($) {
   var timelines = $('.cd-horizontal-timeline'),
     eventsMinDistance = 85;
-
+  var vwidth = $(window).width();
   (timelines.length > 0) && initTimeline(timelines);
 
   function initTimeline(timelines) {
@@ -36,6 +36,10 @@ jQuery(document).ready(function($) {
         event.preventDefault();
         updateSlide(timelineComponents, timelineTotWidth, 'prev');
       });
+      if(vwidth >= 320){
+            event.preventDefault();
+            updateSlide(timelineComponents, timelineTotWidth, 'next');
+      }
       //detect click on the a single event - show new event content
       timelineComponents['eventsWrapper'].on('click', 'a', function(event) {
         event.preventDefault();
@@ -265,4 +269,5 @@ jQuery(document).ready(function($) {
     //check if mobile or desktop device
     return window.getComputedStyle(document.querySelector('.cd-horizontal-timeline'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
   }
+
 });

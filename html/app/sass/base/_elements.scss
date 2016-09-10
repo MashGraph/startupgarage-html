@@ -2,6 +2,10 @@
   right: 100px;
   top: 30px;
 
+  @media screen and (max-width: 1024px) {
+    right: -40px;
+  }
+
   @media screen and (max-width: 768px) {
     right: 0;
     position: relative !important;
@@ -14,7 +18,12 @@
   @include centerer(false, true);
 
   top: 220px;
-  left: 100px;
+  left: auto;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    position: relative !important;
+    margin: 0 auto;
+  }
 }
 
 .elements {
@@ -22,13 +31,21 @@
 }
 
 .cloud-big-1 {
-  left: 200px;
+  left: 110px;
   top: -20px;
+
+  @media screen and (max-width: 768px) {
+    left: 150px;
+  }
 }
 
 .cloud-big-2 {
-  right: -80px;
+  right: 0;
   top: 80px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    right: 80px;
+  }
 
   @media screen and (max-width: 767) {
     right: -300px;
@@ -37,12 +54,16 @@
 
 .cloud-small-1 {
   top: 100px;
-  left: 100px;
+  left: 50px;
 }
 
 .cloud-small-2 {
   top: -50px;
   right: 0;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    right: 100px;
+  }
 }
 
 .modal {
