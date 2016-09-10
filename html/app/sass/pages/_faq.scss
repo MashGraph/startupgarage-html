@@ -53,6 +53,10 @@
       font-size: 16px;
       display: none;
 
+      @media screen and (max-width: 767px) {
+        text-align: justify;
+      }
+
       ul {
         padding-left: 35px;
         list-style-type: square;
