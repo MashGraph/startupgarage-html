@@ -22,13 +22,13 @@
 
   .faq {
     p {
-      @media screen and (max-width: 767px) {
-        text-align: justify;
-      }
+      @media screen and (max-width: 767px) {}
     }
 
     li {
-      word-wrap: break-word;
+      @media screen and (max-width: 767px) {
+        word-wrap: break-word;
+      }
     }
 
     & > li {
