@@ -70,14 +70,24 @@ footer {
   }
 }
 
-.logo-footer-container {
-  @media screen and (min-width: 768px) and (max-width: 992px) {
-    position: relative;
-    top: 20px;
+.logo-socials {
+  position: relative;
+
+  .logo-socials-container {
+    padding-left: 50%;
   }
+}
+
+.logo-footer-container {
+  // @media screen and (min-width: 768px) and (max-width: 992px) {
+  //   position: relative;
+  //   top: 20px;
+  // }
 
   @media screen and (max-width: 767px) {
-    position: relative;
-    left: -10px;
+    width: 80px;
+    left: 20px;
   }
+
+  @include centerer(false, true);
 }

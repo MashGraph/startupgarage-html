@@ -206,6 +206,12 @@
   .weknowstartup {
     padding-left: 170px;
 
+    h2 {
+      @media screen and (max-width: 767px) {
+        text-align: center;
+      }
+    }
+
     @media screen and (max-width: 767px) {
       padding: 5px;
 
